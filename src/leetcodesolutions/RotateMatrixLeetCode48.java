@@ -1,4 +1,4 @@
-package arrays;
+package leetcodesolutions;
 
 //Rotate Matrix
 //Given an image represented by an NxN matrix write a method to rotate the image by 90 degrees.
