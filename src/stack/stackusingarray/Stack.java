@@ -29,4 +29,21 @@ public class Stack {
             System.out.println("Element "+value+" inserted");
         }
     }
+
+    public String pop()
+    {
+        return (isEmpty()? "Empty Stack" :String.valueOf(arr[top--]));
+    }
+
+    public String peek()
+    {
+        return (isEmpty()? "Empty Stack" :String.valueOf(arr[top]));
+    }
+
+    public void deleteStack()
+    {
+        arr=null;
+        top=-1;
+        System.out.println("Stack Deleted");
+    }
 }
