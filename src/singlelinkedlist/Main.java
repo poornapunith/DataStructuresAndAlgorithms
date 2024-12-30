@@ -15,6 +15,18 @@ public class Main {
         sll.searchInSingleLinkedList(2);
         sll.searchInSingleLinkedList(30);
 
+        sll.deleteFromSingleLinkedList(0);
+        sll.displaySingleLinkedList();
+        sll.deleteFromSingleLinkedList(2);
+        sll.displaySingleLinkedList();
+        sll.insertIntoSingleLinkedList(1,0);
+        sll.displaySingleLinkedList();
+        sll.insertIntoSingleLinkedList(2,2);
+        sll.displaySingleLinkedList();
+        sll.insertIntoSingleLinkedList(10,8);
+        sll.displaySingleLinkedList();
+
+
 
     }
 }

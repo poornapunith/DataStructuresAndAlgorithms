@@ -36,7 +36,7 @@ public class SingleLinkedListOperations {
             }
             else {
                 Node temp = head;
-                int i = 0;
+                int i = 1;
                 while (i < position - 1) {
                     temp = temp.next;
                     i++;
@@ -59,6 +59,39 @@ public class SingleLinkedListOperations {
             i++;
         }
         System.out.println(value+" Not found");
+    }
+
+    public void deleteFromSingleLinkedList(int position) {
+        if (head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
+        else
+        {
+            if(position == 0) {
+                head = head.next;
+            }
+            else if (position > size - 1) {
+                Node temp = head;
+                int i = 1;
+                while (i < size - 1) {
+                    temp = temp.next;
+                    i++;
+                }
+                tail=temp;
+                temp.next=null;
+            }
+            else {
+                Node temp = head;
+                int i = 1;
+                while (i < position - 1) {
+                    temp=temp.next;
+                    i++;
+                }
+                temp.next=temp.next.next;
+            }
+        }
+        size--;
     }
 
 
