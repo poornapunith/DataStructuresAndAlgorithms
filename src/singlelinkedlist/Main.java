@@ -12,5 +12,9 @@ public class Main {
         sll.insertIntoSingleLinkedList(4,1);
         sll.displaySingleLinkedList();
 
+        sll.searchInSingleLinkedList(2);
+        sll.searchInSingleLinkedList(30);
+
+
     }
 }

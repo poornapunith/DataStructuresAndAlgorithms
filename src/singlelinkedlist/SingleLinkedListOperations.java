@@ -47,6 +47,19 @@ public class SingleLinkedListOperations {
         }
         size++;
     }
+    public void searchInSingleLinkedList(int value) {
+        Node temp = head;
+        int i=0;
+        while (i<size) {
+            if (temp.value == value) {
+                System.out.println(value+" Found at position " + (i+1));
+                return;
+            }
+            temp = temp.next;
+            i++;
+        }
+        System.out.println(value+" Not found");
+    }
 
 
 }
