@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Stack newStack = new Stack(5);
         newStack.isEmpty();
+        newStack.isFull();
     }
 
 }

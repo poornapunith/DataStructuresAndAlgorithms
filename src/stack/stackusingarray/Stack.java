@@ -16,4 +16,12 @@ public class Stack {
         else
             System.out.println("Stack is NOT empty");
     }
+
+    public void isFull()
+    {
+        if(top == arr.length-1)
+            System.out.println("Stack is Full");
+        else
+            System.out.println("Stack is NOT Full");
+    }
 }
