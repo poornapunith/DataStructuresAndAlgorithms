@@ -9,19 +9,24 @@ public class Stack {
         System.out.println("Stack Created with Size: " + size);
     }
 
-    public void isEmpty()
+    public boolean isEmpty()
     {
-        if(top == -1)
-            System.out.println("Stack is empty");
-        else
-            System.out.println("Stack is NOT empty");
+        return (top == -1);
     }
 
-    public void isFull()
+    public boolean isFull()
     {
-        if(top == arr.length-1)
-            System.out.println("Stack is Full");
+        return (top == arr.length - 1);
+    }
+
+    public void push(int value)
+    {
+        if(isFull())
+            System.out.println("Stack is full- Cant insert Element");
         else
-            System.out.println("Stack is NOT Full");
+        {
+            arr[++top] = value;
+            System.out.println("Element "+value+" inserted");
+        }
     }
 }
