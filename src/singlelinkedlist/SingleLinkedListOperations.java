@@ -12,6 +12,10 @@ public class SingleLinkedListOperations {
         size++;
     }
     public void displaySingleLinkedList() {
+        if (head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
         Node currentNode = head;
         while (currentNode != null) {
             System.out.print(currentNode.value+"->");
@@ -92,6 +96,12 @@ public class SingleLinkedListOperations {
             }
         }
         size--;
+    }
+    public void deleteEntireSLL()
+    {
+        head=null;
+        tail=null;
+        size=0;
     }
 
 
