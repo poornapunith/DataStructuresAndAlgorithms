@@ -25,7 +25,7 @@ public class Main {
         sll.displaySingleLinkedList();
         sll.insertIntoSingleLinkedList(10,8);
         sll.displaySingleLinkedList();
-        sll.deleteEntireSLL();
+        sll.rotateSingleLinkedList(2);
         sll.displaySingleLinkedList();
 
 

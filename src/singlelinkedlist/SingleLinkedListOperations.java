@@ -104,5 +104,22 @@ public class SingleLinkedListOperations {
         size=0;
     }
 
+    public void rotateSingleLinkedList(int n)
+    {
+        if(head==null)
+        {
+            System.out.println("Can't rotate empty list");
+            return;
+        }
+
+        for (int i=0;i<n;i++)
+        {
+            tail.next=head;
+            head=head.next;
+            tail=tail.next;
+            tail.next=null;
+        }
+    }
+
 
 }
