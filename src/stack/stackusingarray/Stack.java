@@ -8,4 +8,12 @@ public class Stack {
         top = -1;
         System.out.println("Stack Created with Size: " + size);
     }
+
+    public void isEmpty()
+    {
+        if(top == -1)
+            System.out.println("Stack is empty");
+        else
+            System.out.println("Stack is NOT empty");
+    }
 }
